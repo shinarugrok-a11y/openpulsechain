@@ -1,0 +1,15 @@
+{
+  "name": "Open PulseChain",
+  "install": "npm install && npm run compile",
+  "terminals": [
+    {
+      "name": "chain",
+      "command": "npm run node"
+    },
+    {
+      "name": "frontend",
+      "command": "npm run dev"
+    }
+  ],
+  "ports": [5173, 8545]
+}

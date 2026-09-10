@@ -1,0 +1,25 @@
+{
+  "name": "openpulsechain",
+  "version": "0.1.0",
+  "description": "Open PulseChain project - EVM smart contracts and a dApp frontend",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "compile": "HARDHAT_TELEMETRY_DISABLED=1 hardhat compile",
+    "test": "HARDHAT_TELEMETRY_DISABLED=1 hardhat test",
+    "node": "HARDHAT_TELEMETRY_DISABLED=1 hardhat node --hostname 127.0.0.1",
+    "deploy:local": "HARDHAT_TELEMETRY_DISABLED=1 hardhat run scripts/deploy.js --network localhost",
+    "frontend:dev": "npm run dev --workspace frontend",
+    "dev": "bash scripts/dev-frontend.sh"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
