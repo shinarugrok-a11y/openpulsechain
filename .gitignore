@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+# Logs / env
+*.log
+.env
+.env.local
+.DS_Store
